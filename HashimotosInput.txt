@@ -1,0 +1,3 @@
+Hashimoto Trait Files\gwas-association-downloaded_2022-02-04-EFO_0003779.tsv
+Hashimoto Trait Files\gwas-association-downloaded_2022-02-04-EFO_0003779-withChildTraits.tsv
+Hashimoto Trait Files\gwas-association-downloaded_2022-02-04-EFO_0009190-withChildTraits.tsv

@@ -1,23 +1,30 @@
 import sys
 
-lines = []
+filesToRead = []
+def readInputFile(inputFileName):
+    with open(inputFileName) as inFile:
+        for line in inFile:
+            if line not in filesToRead:
+                filesToRead.append(line.strip())
 
+lines = []
 def readFile(inFileName):
-    with open(inFileName) as inFile:
+    with open(inFileName, encoding="utf-8") as inFile:
         for line in inFile:
             if line not in lines:
                 lines.append(line)
 
 def writeFile(filteredLines, outFileName):
-    with open(outFileName, "w") as outFile:
+    with open(outFileName, "w",  encoding="utf-8") as outFile:
         for line in filteredLines:
             outFile.write(line)
 
-def FilterLines(numInputFiles, outputFileName):
-    for i in range(numInputFiles):
-        readFile(sys.argv[i + 3])
-    filteredLines = ""
+def FilterLines(inputFile, outputFileName):
+    readInputFile(inputFile)
+    for file in filesToRead:
+        readFile(file)
 
+    filteredLines = ""
     for line in lines:
         cols = line.split('\t')
         if line.startswith("DATE"): #Header
@@ -28,9 +35,13 @@ def FilterLines(numInputFiles, outputFileName):
         mapped_trait = cols[34].lower()
         p_val = cols[27].split("E")[1]
 
-        if ("hashimoto" in disease_trait or "hashimoto" in mapped_trait) and int(p_val) >= -8 and line not in filteredLines:
-            filteredLines += line
+        traits = sys.argv[3:]
+        for trait in traits:
+            if (trait.lower() in disease_trait or trait.lower() in mapped_trait) and int(p_val) <= -8 and line not in filteredLines:
+                filteredLines += line
 
     writeFile(filteredLines, outputFileName)
 
-FilterLines(int(sys.argv[1]), sys.argv[2])
+inputFile = sys.argv[1]
+outputFileName = sys.argv[2]
+FilterLines(inputFile, outputFileName)

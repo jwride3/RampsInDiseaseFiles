@@ -1,0 +1,14 @@
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0003757.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0003758.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0003758-withChildTraits.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0003888.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0004215.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0004242.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0004609-withChildTraits.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0004782.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0004828.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0004895.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0005427.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0005427-withChildTraits.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0009854-withChildTraits.tsv
+Autism Spectrum\gwas-association-downloaded_2022-02-11-EFO_0009963-withChildTraits.tsv
