@@ -20,9 +20,10 @@ def writeFile(filteredLines, outFileName):
             outFile.write(line)
 
 def FilterLines(inputFile, outputFileName):
-    readInputFile(inputFile)
-    for file in filesToRead:
-        readFile(file)
+    #readInputFile(inputFile)
+    #for file in filesToRead:
+    #    readFile(file)
+    readFile(inputFile)
 
     filteredLines = ""
     for line in lines:
